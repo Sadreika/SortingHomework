@@ -5,7 +5,7 @@
 
     public class FileService : IFileService
     {
-        private FileStream GetFileStream(string fileName)
+        public FileStream GetFileStream(string fileName)
         {
             return new FileStream(fileName, FileMode.OpenOrCreate);
         }
